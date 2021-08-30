@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-weight: 800;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.field {
+  max-width: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.75em 0;
+}
+input {
+  width: 200px;
+  align-self: flex-end;
+}
+label {
+  margin-right: 1em;
+}
+
+.btn {
+  margin: 1.5em 0;
+  display: flex;
+  justify-content: center;
+}
+img {
+  margin: 0 auto;
+}

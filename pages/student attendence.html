@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="../Script/qrcode.min.js"></script>
+    <link rel="stylesheet" href="../css/faculty.css" />
+  </head>
+  <body>
+    <form class="content">
+      <h2 class="text">STUDENT QR CODE</h2>
+      <div class="field">
+        <label for="user_input"> Name </label>
+        <input type="text" required name="user_input" id="user_input" />
+      </div>
+      <div class="field">
+        <label for="user_input1"> Department</label>
+        <input type="text" required name="user_input1" id="user_input1" />
+      </div>
+      <div class="field">
+        <label for="user_input2"> Class </label>
+        <input type="text" required name="user_input1" id="user_input2" />
+      </div>
+      <div class="btn">
+        <button type="submit" id="btn_generate">Generate QR Code</button>
+      </div>
+      <div id="qrcode"></div>
+    </form>
+    <script type="text/javascript">
+      document.forms[0].addEventListener("submit", (e) => {
+        e.preventDefault();
+        const qrcode = document.getElementById("qrcode");
+        qrcode.innerHTML = "";
+        let out =
+          document.getElementById("user_input").value +
+          "," +
+          document.getElementById("user_input1").value +
+          "," +
+          document.getElementById("user_input2").value;
+        new QRCode(qrcode, out);
+      });
+    </script>
+  </body>
+</html>
