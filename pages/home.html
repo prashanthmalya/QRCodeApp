@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="../manifest.json" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--========== BOX ICONS ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon" />
+
+    <title>Attendence App</title>
+  </head>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="header">
+      <div class="header__container">
+        <img src="../images/sdc.jpg" alt="" class="header__img" />
+
+        <a href="#" class="header__logo">malya </a>
+
+        <div class="header__search">
+          <input type="search" placeholder="Search" class="header__input" />
+          <i class="bx bx-search header__icon"></i>
+        </div>
+
+        <div class="header__toggle">
+          <i class="bx bx-menu" id="header-toggle"></i>
+        </div>
+      </div>
+    </header>
+
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+      <nav class="nav__container">
+        <div>
+          <a href="#" class="nav__link nav__logo">
+            <i class="bx bxs-disc nav__icon"></i>
+            <p class="nav__logo-name">attendence app</p>
+          </a>
+
+          <div class="nav__list">
+            <div class="nav__items">
+              <h3 class="nav__subtitle">Profile</h3>
+
+              <a href="#" class="nav__link active">
+                <i class="bx bx-home nav__icon"></i>
+                <span class="nav__name">Home</span>
+              </a>
+
+              <div class="nav__dropdown">
+                <a href="#" class="nav__link">
+                  <i class="bx bx-user nav__icon"></i>
+                  <span class="nav__name">Profile</span>
+                  <i
+                    class="bx bx-chevron-down nav__icon nav__dropdown-icon"
+                  ></i>
+                </a>
+
+                <div class="nav__dropdown-collapse">
+                  <div class="nav__dropdown-content">
+                    <a href="#" class="nav__dropdown-item">About collage</a>
+                    <a
+                      href="../pages/secretary1.html"
+                      class="nav__dropdown-item"
+                      >secretary</a
+                    >
+                    <a
+                      href="../pages/principal1.html"
+                      class="nav__dropdown-item"
+                      >principal</a
+                    >
+                    <a href="../pages/courses.html" class="nav__dropdown-item"
+                      >courses
+                    </a>
+                    <a href="../pages/library.html" class="nav__dropdown-item">
+                      Library
+                    </a>
+                    <a href="../pages/gallary.html" class="nav__dropdown-item">
+                      Gallery
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="nav__link">
+                <i class="bx bx-message-rounded nav__icon"></i>
+                <span class="nav__name">Messages</span>
+              </a>
+
+              <div class="nav__items">
+                <h3 class="nav__subtitle">Menu</h3>
+                <a href="../pages/faculty attendence.html" class="nav__link">
+                  <i class="bx bx-user nav__icon"> </i>
+                  <span class="nav__name">Faculty attendece</span>
+                </a>
+
+                <a href="../pages/student attendence.html" class="nav__link">
+                  <i class="bx bx-user nav__icon"></i>
+                  <span class="nav__name">Student attendence</span>
+                </a>
+              </div>
+              <a href="#" id="install" class="nav__link nav__install">
+                <i class="bx bxs-download nav__icon"></i>
+                <span class="nav__name">Install</span>
+              </a>
+
+              <a href="#" class="nav__link nav__logout">
+                <i class="bx bx-log-out nav__icon"></i>
+                <span class="nav__name">Log Out</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--========== CONTENTS ==========-->
+    <main>
+      <section>
+        <center>
+          <h1>
+            Smt. Danamma Channabasavaiah College of Arts, Commerce, Science and
+            Management Studies
+          </h1>
+        </center>
+      </section>
+    </main>
+    <center><img src="../images/main-icon.png" /></center>
+    <p>
+      Smt Danamma Channabasavaiah College of Arts Commerce and Science &
+      Management Studies is situated in Kolar in Karnataka state of India.
+      Established in 2008, it is accredited from NAAC and it is affiliated to
+      Bangalore University. SDCCACSM, Kolar offers 5 courses across 4 streams
+      namely Commerce and Banking, Management, IT, Science and across 4 degrees
+      like BSc, BCA, BBA, B.Com.Hostel facility is not available for its
+      students. Additional campus facilities such as Math Lab, Canteen, Computer
+      Lab, Library, Medical Facilities, Cls. Room are also there.
+    </p>
+    <!--========== MAIN JS ==========-->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+
+    <script>
+      // Import the functions you need from the SDKs you need
+
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCV-HSva3P03RNw1GIn7OXTdMKd8YEXmY8",
+        authDomain: "qrcodeapp-1a6af.firebaseapp.com",
+        projectId: "qrcodeapp-1a6af",
+        storageBucket: "qrcodeapp-1a6af.appspot.com",
+        messagingSenderId: "430244224803",
+        appId: "1:430244224803:web:87f90a2ad7b500a93db696",
+        measurementId: "G-6Q6JTBXV0N",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("./sw.js")
+            .then((reg) => console.log("service worker registered", reg.scope))
+            .catch((err) => console.log("service worker not registered", err));
+        });
+      }
+    </script>
+    <script src="../Script/main.js"></script>
+    <script>
+      firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+          document.querySelector(".header__logo").textContent =
+            user.displayName;
+          document.querySelector(".header__img").src = user.photoURL;
+        } else {
+          location.pathname = "";
+        }
+      });
+    </script>
+  </body>
+</html>

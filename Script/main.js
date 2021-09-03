@@ -55,3 +55,10 @@ function colorLink() {
 }
 
 linkColor.forEach((l) => l.addEventListener("click", colorLink));
+
+document.querySelector(".nav__logout").addEventListener("click", () => {
+  firebase
+    .auth()
+    .signOut()
+    .then((res) => console.log("user logged out"));
+});

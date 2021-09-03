@@ -1,11 +1,12 @@
-const staticCacheName = "site-static-v2";
-const dynamicCacheName = "site-dynamic-v2";
+const staticCacheName = "site-static-v4";
+const dynamicCacheName = "site-dynamic-v4";
 const assets = [
   "/",
   "/index.html",
   "/manifest.json",
   "/css/style.css",
   "/css/faculty.css",
+  "/css/index.css",
   "/icons/favicon.ico",
   "/icons/android-chrome-192x192.png",
   "/icons/android-chrome-512x512.png",
@@ -17,6 +18,7 @@ const assets = [
   "/images/sdc.jpg",
   "/images/secratary.jpg",
   "/pages/courses.html",
+  "/pages/home.html",
   "/pages/faculty attendence.html",
   "/pages/gallary.html",
   "/pages/library.html",
